@@ -1,0 +1,14 @@
+[flake8]
+max-line-length = 88
+extend-ignore = E203, W503
+exclude =
+    __pycache__,
+    .git,
+    .mypy_cache,
+    .pytest_cache,
+    .venv,
+    build,
+    dist
+per-file-ignores =
+    # 예: __init__.py 에서는 F401 (unused imports) 허용
+    __init__.py: F401
